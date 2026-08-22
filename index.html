@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decoding Digital Romance</title>
+  <meta name="description" content="A digital humanities artefact exploring emotional design and player experience in Love and Deepspace." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">✦</span>
+      <span>DECODING<br>DIGITAL ROMANCE</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#layers" class="nav-link">Narrative Layers</a>
+      <a href="#text" class="nav-link">Text Analysis</a>
+      <a href="#survey" class="nav-link">Survey Findings</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">DIGITAL HUMANITIES ARTEFACT</p>
+        <h1>Decoding<br>Digital Romance</h1>
+        <p class="subtitle">Emotional Mechanics and Player Experience in <em>Love and Deepspace</em></p>
+        <p class="intro">
+          How does a fictional character become emotionally meaningful?
+          This interactive artefact explores the relationship between embodied design,
+          distributed characterisation, everyday companionship and reported player attachment.
+        </p>
+        <a class="primary-button" href="#layers">Explore the research <span>→</span></a>
+      </div>
+
+      <div class="hero-orbit reveal" aria-label="Conceptual model of relational presence">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="core-orb">
+          <small>RECURRENT</small>
+          <span>RELATIONAL<br>PRESENCE</span>
+        </div>
+
+        <button class="concept-node node-a" data-concept="Embodied technologies make the character perceptually immediate through gaze, voice, animation and responsive interaction.">
+          <span class="node-glow"></span>
+          EMBODIED<br>PRESENCE
+        </button>
+        <button class="concept-node node-b" data-concept="Narrative layers provide different ways of knowing the same character across story, messages, calls and intimate side content.">
+          <span class="node-glow"></span>
+          NARRATIVE<br>LAYERING
+        </button>
+        <button class="concept-node node-c" data-concept="Repeated communication returns the character to the player's ordinary routine, creating relational continuity over time.">
+          <span class="node-glow"></span>
+          DAILY<br>COMPANIONSHIP
+        </button>
+
+        <div id="concept-caption" class="concept-caption">
+          Hover or tap a node to explore the model.
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CORE ARGUMENT</p>
+        <h2>From fictional character to recurring presence</h2>
+        <p>
+          The project treats intimacy as a layered process rather than the product of a single
+          story, technology or interaction.
+        </p>
+      </div>
+      <div class="finding-grid">
+        <article class="glass-card reveal">
+          <span class="card-index">01</span>
+          <h3>Embodied Immediacy</h3>
+          <p>3D presentation and responsive audiovisual cues invite a sense of perceptual proximity.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-index">02</span>
+          <h3>Narrative Coherence</h3>
+          <p>Character knowledge is distributed across multiple forms of encounter rather than contained in one text.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-index">03</span>
+          <h3>Relational Continuity</h3>
+          <p>Messages, calls and companionship systems make the fictional relationship repeatedly available.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- NARRATIVE LAYERS -->
+    <section id="layers" class="section layered-section">
+      <div class="section-heading narrow reveal">
+        <p class="eyebrow">XAVIER CASE STUDY</p>
+        <h2>Narrative Layers</h2>
+        <p>
+          Characterisation in <em>Love and Deepspace</em> extends beyond the main plot.
+          This case study examines selected Xavier texts across several major content forms.
+        </p>
+      </div>
+
+      <div class="scope-note reveal">
+        <span>✦</span>
+        <p>
+          <strong>Analytical scope.</strong> The highlighted layers are based on selected Xavier texts analysed
+          in the dissertation. They are presented as an exploratory case study rather than a representative
+          comparison of all game content. Smaller forms of encounter, including battle voice lines, remain
+          outside the analysed corpus.
+        </p>
+      </div>
+
+      <div class="layers-layout">
+        <div class="layer-orbit-wrap reveal">
+          <div class="layer-orbit" aria-label="Open constellation of Xavier narrative layers">
+            <div class="layer-ring ring-a"></div>
+            <div class="layer-ring ring-b"></div>
+            <div class="layer-ring ring-c"></div>
+
+            <div class="xavier-core">
+              <small>CHARACTER</small>
+              <strong>XAVIER</strong>
+              <span>CASE STUDY</span>
+            </div>
+
+            <button class="layer-node active-layer" data-layer="main">Main Story</button>
+            <button class="layer-node" data-layer="anecdote">Anecdote</button>
+            <button class="layer-node" data-layer="card">Card Story</button>
+            <button class="layer-node" data-layer="messages">Text Messages</button>
+            <button class="layer-node" data-layer="whisper">Whisper / Companionship</button>
+            <button class="layer-node" data-layer="calls">Calls</button>
+
+            <button class="layer-node muted-node" data-layer="battle">Battle Voices</button>
+            <button class="layer-node ellipsis-node" data-layer="beyond" aria-label="Other character encounters">•••</button>
+          </div>
+
+          <div class="legend">
+            <span><i class="legend-dot analysed"></i> Analysed layer</span>
+            <span><i class="legend-dot unanalysed"></i> Beyond analysed corpus</span>
+          </div>
+        </div>
+
+        <aside class="layer-panel reveal" id="layer-panel">
+          <div class="layer-panel-head">
+            <p class="eyebrow" id="layer-label">ANALYSED LAYER</p>
+            <h3 id="layer-title">Main Story</h3>
+            <p id="layer-subtitle">Plot-oriented characterisation</p>
+          </div>
+
+          <div class="layer-section">
+            <span class="mini-label">MODE OF ENCOUNTER</span>
+            <p id="layer-function">
+              Establishes Xavier within the game’s central world, conflict and relational framework.
+            </p>
+          </div>
+
+          <div class="layer-section">
+            <span class="mini-label">OBSERVED REGISTER IN THE SELECTED SAMPLE</span>
+            <p id="layer-register">
+              Technical and combat-oriented language positions Xavier primarily as an actor within the central plot.
+            </p>
+          </div>
+
+          <div class="layer-section">
+            <span class="mini-label">DISTINCTIVE TERMS</span>
+            <div id="layer-tags" class="tag-row"></div>
+          </div>
+
+          <button id="explore-layer" class="text-button">Explore related terms in Text Analysis →</button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TEXT ANALYSIS -->
+    <section id="text" class="section text-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">TEXTUAL EVIDENCE</p>
+        <h2>Text Analysis</h2>
+        <p>
+          The corpus analysis combines distant reading with close interpretation.
+          This public interface presents selected quantitative findings and a lightweight
+          keyword explorer without reproducing complete game transcripts.
+        </p>
+      </div>
+
+      <div class="text-findings-grid">
+        <article class="metric-card reveal">
+          <span class="metric-kicker">MC INTERIORITY</span>
+          <strong>12.8% <small>vs 2.1%</small></strong>
+          <p>Parenthetical inner monologue appears far more often in MC’s lines than across the combined love-interest dialogue.</p>
+        </article>
+        <article class="metric-card reveal">
+          <span class="metric-kicker">CARD-STORY REGISTER</span>
+          <strong>5.40 <small>/ 1,000 words</small></strong>
+          <p>Archaic forms such as <em>shall</em>, <em>thee</em> and <em>thou</em> concentrate in the selected romantic card-story sample.</p>
+        </article>
+        <article class="metric-card reveal">
+          <span class="metric-kicker">MESSAGE REGISTER</span>
+          <strong>24.6 <small>/ 1,000 words</small></strong>
+          <p>Informal typing forms such as <em>u</em>, <em>ur</em> and <em>idk</em> concentrate in the selected text-message sample.</p>
+        </article>
+      </div>
+
+      <div class="corpus-shell reveal">
+        <div class="corpus-intro">
+          <div>
+            <p class="eyebrow">CORPUS EXPLORER</p>
+            <h3>Search selected textual traces</h3>
+          </div>
+          <span class="status-pill">FULL STUDY CORPUS CONNECTED</span>
+        </div>
+
+        <div class="search-row">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="corpus-search" type="search" placeholder="Search a term… e.g. shall, ur, snow" />
+          </label>
+          <select id="layer-filter" aria-label="Filter by narrative layer">
+            <option value="all">All analysed layers</option>
+            <option value="Main Story">Main Story</option>
+            <option value="Anecdote">Anecdote</option>
+            <option value="Card Story">Card Story</option>
+            <option value="Text Messages">Text Messages</option>
+            <option value="Whisper / Companionship">Whisper / Companionship</option>
+            <option value="Calls">Calls</option>
+          </select>
+        </div>
+
+        <div class="corpus-meta">
+          <span id="result-count">Enter a term to search the textual corpus used in this study.</span>
+          <span>Keyword-in-context only · no full transcript download</span>
+        </div>
+
+        <div id="search-results" class="search-results">
+          <div class="empty-state">
+            <span class="sparkle">✦</span>
+            <p>
+              Search a word or phrase to view keyword-in-context traces across the Xavier corpus used in this study.
+              Results display short contexts rather than full transcripts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURVEY -->
+    <section id="survey" class="section survey-section">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">PLAYER EXPERIENCE</p>
+        <h2>Survey Findings</h2>
+        <p>
+          The survey examines how embodied immersion, daily companionship, narrative salience
+          and fandom relate to respondents’ reported emotional attachment.
+        </p>
+      </div>
+
+      <div class="number-grid reveal">
+        <div class="number-card"><strong>109</strong><span>Valid responses</span></div>
+        <div class="number-card"><strong>52</strong><span>Chinese-language</span></div>
+        <div class="number-card"><strong>57</strong><span>English-language</span></div>
+        <div class="number-card"><strong>66</strong><span>Substantive open responses</span></div>
+      </div>
+
+      <div class="survey-callout reveal">
+        <span>✧</span>
+        <p>
+          Questionnaire-language groups are used descriptively and should not be read as direct
+          proxies for nationality or cultural identity.
+        </p>
+      </div>
+
+      
+      <div class="survey-story">
+
+        <section class="survey-step reveal">
+          <div class="survey-step-copy">
+            <span class="step-number">01</span>
+            <div>
+              <p class="eyebrow">WHAT PREDICTS ATTACHMENT?</p>
+              <h3>Which experiences are independently associated with emotional attachment?</h3>
+              <p>
+                A multiple regression tested five aspects of player experience at the same time.
+                Longer bars indicate stronger independent associations with emotional attachment (D3);
+                highlighted bars are statistically significant in the full model.
+              </p>
+            </div>
+          </div>
+
+          <div class="tableau-shell">
+            <div class="tableau-responsive tableau-short">
+              <tableau-viz
+                id='tableau-regression'
+                src='https://public.tableau.com/views/1_17874046906360/2_1?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
+                width='1100'
+                height='440'
+                hide-tabs
+                toolbar='bottom'>
+              </tableau-viz>
+            </div>
+          </div>
+
+          <div class="takeaway-card">
+            <span class="mini-label">KEY FINDING</span>
+            <p>
+              Technological / embodied immersion and daily virtual companionship showed the strongest
+              independent positive associations with reported emotional attachment.
+            </p>
+          </div>
+        </section>
+
+        <section class="survey-step reveal">
+          <div class="survey-step-copy">
+            <span class="step-number">02</span>
+            <div>
+              <p class="eyebrow">FEATURE SALIENCE</p>
+              <h3>Does attachment differ depending on which features players found especially immersive?</h3>
+              <p>
+                Respondents could select up to two features that made them feel most immersed or emotionally
+                close to a favourite character. Each line compares the average attachment score of respondents
+                who selected a feature with those who did not.
+              </p>
+            </div>
+          </div>
+
+          <div class="tableau-shell">
+            <div class="tableau-responsive tableau-short">
+              <tableau-viz
+                id='tableau-features'
+                src='https://public.tableau.com/views/1_17874046906360/3_1?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
+                width='1100'
+                height='440'
+                hide-tabs
+                toolbar='bottom'>
+              </tableau-viz>
+            </div>
+          </div>
+
+          <div class="story-paradox-card">
+            <span class="mini-label">A SURPRISING PATTERN</span>
+            <h4>Story salience and relational attachment are not the same thing.</h4>
+            <p>
+              Respondents who selected Story reported lower average attachment than those who did not,
+              while Interaction and Quality Time showed the opposite pattern. This does <strong>not</strong>
+              mean that story reduces attachment: Q5 allowed up to two selections, so “Selected” indicates
+              feature salience rather than an exclusive player type. These comparisons are associative, not causal.
+            </p>
+          </div>
+        </section>
+
+        <section class="survey-step reveal">
+          <div class="survey-step-copy">
+            <span class="step-number">03</span>
+            <div>
+              <p class="eyebrow">PLAYER VOICES, AGGREGATED</p>
+              <h3>What did players themselves say made the relationship meaningful?</h3>
+              <p>
+                Sixty-six respondents provided substantive open-ended answers. Rather than publishing individual
+                responses, this public artefact presents only aggregated thematic patterns derived from the coding.
+              </p>
+            </div>
+          </div>
+
+          <div class="tableau-shell">
+            <div class="tableau-responsive tableau-tall">
+              <tableau-viz
+                id='tableau-themes'
+                src='https://public.tableau.com/views/1_17874046906360/4_1?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
+                width='1100'
+                height='590'
+                hide-tabs
+                toolbar='bottom'>
+              </tableau-viz>
+            </div>
+          </div>
+
+          <div class="takeaway-card">
+            <span class="mini-label">WHAT PLAYERS FOREGROUNDED</span>
+            <p>
+              The most frequently coded themes concerned real-life compensation, listening and validation,
+              and the integration of the character into everyday routines. Counts include both primary and
+              secondary theme assignments and are therefore not mutually exclusive respondent categories.
+            </p>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="survey-conclusion reveal">
+        <span class="sparkle">✦</span>
+        <div>
+          <p class="eyebrow">FROM IMMERSION TO ATTACHMENT</p>
+          <h3>Repeated presence matters.</h3>
+          <p>
+            The survey does not reduce attachment to one mechanic. Embodied design can make a character feel
+            immediately present; narrative gives that character history and meaning; repeated communication allows
+            that meaning to become part of everyday routine.
+          </p>
+        </div>
+      </div>
+
+      <script type='module' src='https://prod-uk-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    </section>
+  </main>
+
+  <footer>
+    <span>Yi Zhong</span>
+    <span>University College Cork</span>
+  </footer>
+
+  <script src="corpus-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
